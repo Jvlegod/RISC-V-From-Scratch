@@ -9,34 +9,28 @@ Your quest is to forge a **riscv64** **Linux From Scratch** rootfs and seal it i
 This repository does **not** accept the rootfs payload itself. We only accept two things:
 
 1) A Markdown “scroll” written by you, which **must include “how to run” instructions**.
-2) A screenshot of `fastfetch` running **inside that environment**.
+2) A screenshot of `fastfetch` or `neofetch` running inside that environment. (**optional**)
 
-If your PR is merged, the castle machinery (CI) will use your **GitHub ID** to create an account for you in our internal realm.
+If your PR is merged, the castle machinery will use your **GitHub ID** to create an account for you in our internal realm.
 
 ---
 
 ## What you must submit
 
-Your PR must include:
-
-### 1) The write-up scroll
-
-Create a new file:
+Your PR must include the write-up scroll. Create the following file:
 
 - `submissions/<githubid>.md`
 
-### 2) The fastfetch screenshot
-
-Commit one PNG screenshot into the repo:
+Your PR may include a PNG screenshot from fastfetch or neofetch. Create the following file:
 
 - `evidence/<githubid>/fastfetch.png`
 
 Screenshot requirements:
 
-- Must be captured from `fastfetch` running inside your published riscv64 rootfs environment
+- Must be captured from fastfetch or neofetch running inside your published riscv64 rootfs environment
 - The screenshot must clearly show the architecture info (**riscv64**) and basic system information
 
-> Do **not** commit the rootfs (or any large binaries) into this repository. Only submit the Markdown + screenshot.
+> Do **not** commit the rootfs (or any large binaries) into this repository. Only submit the Markdown (+ screenshot).
 
 ---
 
@@ -89,7 +83,9 @@ Copy the following into `submissions/<githubid>.md` and fill it in:
 
 1. ...
 
-## fastfetch evidence
+<!-- Optional section -->
+
+## fastfetch / neofetch evidence
 
 <!-- Insert your fastfetch screenshot here -->
 
@@ -108,7 +104,7 @@ Copy the following into `submissions/<githubid>.md` and fill it in:
 
 - ...
 
-## License & security declaration
+## Security declaration
 
 - I confirm the rootfs contains no secrets/tokens/SSH keys/credentials/private data.
 ```

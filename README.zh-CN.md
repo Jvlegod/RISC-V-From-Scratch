@@ -6,34 +6,28 @@ Guten Tag! 旅人，你已踏入门槛之门。
 
 本仓库不收 rootfs 本体。我们只收两样东西:
 1) 你自己编写的包含"如何运行"的 Markdown 格式心得卷轴
-2) 一张在该环境内运行 `fastfetch` 的截图
+2) 一张在该环境内运行 `fastfetch` 或者 `neofetch` 的截图 (可选)
 
-若你的 PR 被合并，城堡机关 (CI) 将使用你的 **GitHub ID** 为你在内部王国创建账号。
+若你的 PR 被合并，城堡机关将使用你的 **GitHub ID** 为你在内部王国创建账号。
 
 ---
 
 ## 你要交付什么
 
-你的 PR 必须包含:
-
-### 1) 心得卷轴
-
-新建文件:
+你的 PR 必须包含心得卷轴，需要新建如下文件:
 
 - `submissions/<githubid>.md`
 
-### 2) fastfetch 截图
-
-提交一张 png 截图到仓库:
+你的 PR 可以包含 fastfetch 或者 neofetch 的 png 截图，需要新建如下文件:
 
 - `evidence/<githubid>/fastfetch.png`
 
 截图要求:
 
-- 必须是在你发布的 riscv64 rootfs 环境里运行 `fastfetch` 得到的输出
+- 必须是在你发布的 riscv64 rootfs 环境里运行 fastfetch 或者 neofetch 得到的输出
 - 截图中需能看到架构信息 (riscv64) 与基本系统信息
 
-> **不要**把 rootfs (或任何大二进制) 提交到本仓库。请只提交 Markdown + 截图。
+> **不要**把 rootfs (或任何大二进制) 提交到本仓库。请只提交 Markdown (+ 截图)。
 
 ---
 
@@ -80,13 +74,15 @@ rootfs 必须放在你自己的任意 GitHub Repo 的 Releases 中，并满足�
 
 ## 如何从 rootfs 运行起来
 
-> 目标：从"下载 rootfs"到"进入环境并跑起 fastfetch"的最短步骤。
+> 目标：从"下载 rootfs"到"进入环境的最短步骤。
 
 ### 方式 1
 
 1. ...
 
-## fastfetch 证据
+<!-- 可选区 -->
+
+## fastfetch / neofetch 证据
 
 <!-- 此处插入你的 fastfetch 截图 -->
 
@@ -105,7 +101,7 @@ rootfs 必须放在你自己的任意 GitHub Repo 的 Releases 中，并满足�
 
 - ...
 
-## 许可与安全声明
+## 安全声明
 
 - 我确认 rootfs 不包含任何密钥/Token/SSH Key/凭据/私人数据。
 ```
